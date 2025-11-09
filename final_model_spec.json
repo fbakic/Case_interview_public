@@ -1,0 +1,63 @@
+{
+  "spec": {
+    "use_area_band": true,
+    "include_bc": true,
+    "include_dw": true,
+    "interactions": [
+      "bcXarea",
+      "bcXdw"
+    ],
+    "time": {
+      "base_year": 2020,
+      "include_t": true,
+      "include_areaXt": true
+    }
+  },
+  "family": "Poisson",
+  "aic": 41555.703679192244,
+  "bic": -1926153.1403131813,
+  "pearson_over_df": 1.0069555712686402,
+  "k_params": 19,
+  "params": {
+    "const": -4.327510329882878,
+    "building_class_2": -0.04502713693927095,
+    "building_class_3": -0.3610725334701788,
+    "dwelling_type_HR": -0.238364012077949,
+    "area_[500, 1000)": 0.5605231240602107,
+    "area_[1000, 2000)": 1.0134043503244525,
+    "area_[2000, 30000)": 1.6818386730124737,
+    "I_building_class_2:@:dwelling_type_HR": -0.38534953537861405,
+    "I_building_class_3:@:dwelling_type_HR": -0.21891428138682195,
+    "I_building_class_2:@:area_[500, 1000)": -0.063264541875066,
+    "I_building_class_2:@:area_[1000, 2000)": 0.0009029349906699707,
+    "I_building_class_2:@:area_[2000, 30000)": 0.005995298455218609,
+    "I_building_class_3:@:area_[500, 1000)": 0.20494234671754324,
+    "I_building_class_3:@:area_[1000, 2000)": 0.1336449661471951,
+    "I_building_class_3:@:area_[2000, 30000)": 0.16672801084020122,
+    "t": 0.02391324877169936,
+    "I_area_[500, 1000):@:t": 0.03313528583086427,
+    "I_area_[1000, 2000):@:t": 0.02845747364681796,
+    "I_area_[2000, 30000):@:t": 0.004401794131778103
+  },
+  "exog_names": [
+    "const",
+    "building_class_2",
+    "building_class_3",
+    "dwelling_type_HR",
+    "area_[500, 1000)",
+    "area_[1000, 2000)",
+    "area_[2000, 30000)",
+    "I_building_class_2:@:dwelling_type_HR",
+    "I_building_class_3:@:dwelling_type_HR",
+    "I_building_class_2:@:area_[500, 1000)",
+    "I_building_class_2:@:area_[1000, 2000)",
+    "I_building_class_2:@:area_[2000, 30000)",
+    "I_building_class_3:@:area_[500, 1000)",
+    "I_building_class_3:@:area_[1000, 2000)",
+    "I_building_class_3:@:area_[2000, 30000)",
+    "t",
+    "I_area_[500, 1000):@:t",
+    "I_area_[1000, 2000):@:t",
+    "I_area_[2000, 30000):@:t"
+  ]
+}
